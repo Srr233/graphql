@@ -6,11 +6,11 @@ export const UUIDScalarType = new GraphQLScalarType({
   name: 'UUID',
   description: 'Scalar UUID for types',
   serialize: (value) => {
-    return uuidToString(value);
+    return value;
   },
 
   parseValue: (value) => {
-    return stringToUUID(value);
+    return value;
   },
 
   parseLiteral: (ast) => {

@@ -61,13 +61,6 @@ const plugin: FastifyPluginAsyncTypebox = async (fastify) => {
               id: parent.id,
             },
           });
-          const res2 = await prisma.user.findUnique({
-            where: {
-              id: parent.id,
-            },
-          });
-          const t = this;
-          const b = arguments;
           return res;
         },
         UUID: UUIDScalarType,
