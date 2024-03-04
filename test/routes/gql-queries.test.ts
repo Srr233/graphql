@@ -134,7 +134,6 @@ await test('gql-queries', async (t) => {
         postId: randomUUID(),
       },
     });
-
     t.ok(!errors);
     t.ok(data.post === null);
     t.ok(data.profile === null);
